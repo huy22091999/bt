@@ -1,0 +1,24 @@
+
+<HTML>
+    <HEAD>
+    <TITLE>Read XML element values</TITLE>
+    <XML ID="meetingsXML" SRC="meetings.xml"></XML>
+    
+    </HEAD>
+    <BODY>
+    <H1>Reading XML element values</H1>
+    <input type="BUTTON" value="Get the name of the third person" onclick="readXMLDocument()">
+    <DIV ID="messageDIV"></DIV>
+    <script language="JavaScript">
+        var xmldoc, meetingsNode, meetingNode, peopleNode, personNode
+        var first_nameNode, last_nameNode,outputText
+        xmldoc=document.all("meetingsXML").XMLDocument		
+        meetingsNode=xmldoc.documentElement
+	    
+	    outputText="Third name: " 
+        messageDIV.innerHTML=outputText	
+   
+    </script>
+    </BODY>
+    </HTML>
+    
